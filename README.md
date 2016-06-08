@@ -5,13 +5,15 @@ It implements two types of authentication:
 - HTML page login, when the user arrives by index.php;
 - Basic Authentication method, when accessing by api.php.
 
-To authenticate using an HTML login page, include the 'auth.php' file, and call the function **authHTML()**.
-
-To authenticate using the [BASIC Authentication method](https://en.wikipedia.org/wiki/Basic_access_authentication), include the 'auth.php' file, and call the function **authAPI()**.
-
 [See the working example](http://ricnish.16mb.com/php-auth-example).
 
 To authenticate, use user 'admin' and password 'admin'.
+
+To authenticate a page using an HTML login page, include the 'auth.php' file, and call the function **authHTML()**.
+
+To authenticate an API script using the [BASIC Authentication method](https://en.wikipedia.org/wiki/Basic_access_authentication), include the 'auth.php' file, and call the function **authAPI()**, [test the API login](http://ricnish.16mb.com/php-auth-example/api.php)
+
+**NOTE:** in real life, the user authentication must be under HTTPS access.
 
 The user validation is done by the function **isValidyUser($user, $pass)**, reimplement it to use a custom validation or to just change the default user and password.
 
