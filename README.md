@@ -5,10 +5,11 @@ It implements two types of authentication:
 - HTML page login, when the user arrives by index.php;
 - Basic Authentication method, when accessing by api.php.
 
-To test it, download, and start the php webserver with the default command line:
-```
-php -S localhost:8000
-```
+To authenticate using an HTML login page, include 'auth.php' file, and call the function **authHTML()**.
+
+To authenticate using the [BASIC Authentication method](https://en.wikipedia.org/wiki/Basic_access_authentication), include 'auth.php' file, and call the function **authAPI()**.
+
+[See the working example](http://ricnish.16mb.com/php-auth-example).
 
 To authenticate, use user 'admin' and password 'admin'.
 
